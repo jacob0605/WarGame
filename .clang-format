@@ -1,0 +1,59 @@
+# 언어 및 스타일 설정
+Language: Cpp
+
+# `#include` 정렬 및 헤더 관련 설정
+SortIncludes: false
+IncludeBlocks: Preserve
+
+# 코드 정렬 관련 설정
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveAssignments: false
+AlignOperands: DontAlign
+AlignTrailingComments: true
+BinPackArguments: false
+BinPackParameters: false
+
+# 들여쓰기 및 공백 설정
+IndentWidth: 4
+UseTab: Never
+TabWidth: 4
+IndentPPDirectives: None
+IndentCaseBlocks: false
+IndentCaseLabels: true
+SpaceBeforeCaseColon: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInAngles: false
+
+# 중괄호 스타일
+BreakBeforeBraces: Attach
+BraceWrapping:
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterStruct: false
+    BeforeElse: false
+    IndentBraces: false
+
+# 짧은 함수 및 제어문 처리
+AllowShortFunctionsOnASingleLine: All # 모든 짧은 함수는 한 줄 유지
+AllowShortIfStatementsOnASingleLine: Always # 짧은 if문도 한 줄 유지
+AllowShortLoopsOnASingleLine: true # 짧은 반복문도 한 줄 유지
+AllowShortCaseLabelsOnASingleLine: false # switch-case 내부 코드 한 줄 유지 안 함
+
+# 생성자 초기화 리스트 설정 (이니셜라이저 리스트 줄바꿈 방지)
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+
+# 줄바꿈 스타일
+ColumnLimit: 0
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: false
+
+# 포인터 및 참조 스타일
+PointerAlignment: Left
+Cpp11BracedListStyle: true
