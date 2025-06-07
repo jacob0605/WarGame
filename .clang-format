@@ -25,6 +25,7 @@ SpaceBeforeCaseColon: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 SpacesInAngles: false
+NamespaceIndentation: All
 
 # 중괄호 스타일
 BreakBeforeBraces: Attach

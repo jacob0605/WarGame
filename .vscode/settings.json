@@ -3,8 +3,10 @@
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureOnOpen": true,
 
-	"editor.formatOnSave": true,
+	// "editor.formatOnSave": true,
 	"[cpp]": {
-    	"editor.defaultFormatter": "xaver.clang-format"
-  	}
+    	"editor.defaultFormatter": "xaver.clang-format",
+		"editor.formatOnSave": true,
+  	},
+	"C_Cpp.formatting": "clangFormat",
 }
