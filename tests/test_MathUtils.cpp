@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "mygame/MathUtils.h"
+#include "WarGame2/MathUtils.h"
 
 TEST(MathUtilsTest, Add) {
     EXPECT_EQ(MyGame::MathUtils::Add(2, 3), 5);
