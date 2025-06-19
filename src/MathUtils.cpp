@@ -1,7 +1,7 @@
-#include "WarGame2/MathUtils.h"
+#include "WarGame/MathUtils.h"
 
-namespace WarGame2 {
+namespace WarGame {
     int MathUtils::Add(int a, int b) {
         return a + b;
     }
-} // namespace WarGame2
+} // namespace WarGame

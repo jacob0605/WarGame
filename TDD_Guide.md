@@ -2,9 +2,9 @@
 
 ## 1. 테스트 코드 작성
 
-- `tests/` 디렉토리에 새로운 테스트 파일을 생성합니다.
-- 예: `tests/test_NewFeature.cpp`
-- 테스트 케이스는 `TEST` 매크로를 사용하고, 명확한 테스트 이름을 지정합니다.
+-   `tests/` 디렉토리에 새로운 테스트 파일을 생성합니다.
+-   예: `tests/test_NewFeature.cpp`
+-   테스트 케이스는 `TEST` 매크로를 사용하고, 명확한 테스트 이름을 지정합니다.
 
 ```cpp
 #include <gtest/gtest.h>
@@ -17,8 +17,8 @@ TEST(NewFeatureTest, SampleCase) {
 
 ## 2. 프로덕션 코드 작성
 
-- `include/WarGame2/`에 헤더 파일을,
-- `src/`에 구현 파일을 생성합니다.
+-   `include/WarGame2/`에 헤더 파일을,
+-   `src/`에 구현 파일을 생성합니다.
 
 ```cpp
 // include/WarGame2/NewFeature.h
@@ -55,8 +55,8 @@ ctest --verbose
 
 ## 4. 테스트 결과 확인 및 리팩토링
 
-- 테스트 실패 → 코드 수정 반복
-- 테스트 성공 → 리팩토링 수행
+-   테스트 실패 → 코드 수정 반복
+-   테스트 성공 → 리팩토링 수행
 
 ---
 
@@ -76,7 +76,56 @@ ctest --verbose
 
 ## 📝 주의사항
 
-- 테스트는 `tests/` 디렉토리에 작성
-- 헤더는 `include/WarGame2/`, 구현은 `src/`에 작성
-- `build/`는 `.gitignore`에 등록
-- 테스트는 독립적으로 작성
+-   테스트는 `tests/` 디렉토리에 작성
+-   헤더는 `include/WarGame/`, 구현은 `src/`에 작성
+-   `build/`는 `.gitignore`에 등록
+-   테스트는 독립적으로 작성
+
+## 포함 예시
+
+파일 구조
+
+-   헤더 : `include/WarGame/MathUtils.h`
+-   구현: `src/MathUtils.cpp`
+-   테스트: `tests/test_MathUtils.cpp`
+
+### 헤더
+
+```cpp
+// include/WarGame/MathUtils.h
+#pragma once
+
+namespace WarGame {
+    class MathUtils {
+    public:
+        static int Add(int a, int b);
+    };
+}
+```
+
+### 구현
+
+```cpp
+// src/MathUtils.cpp
+#include "WarGame/MathUtils.h"
+
+namespace WarGame {
+    int MathUtils::Add(int a, int b) {
+        return a + b;
+    }
+}
+```
+
+### 테스트 코드
+
+```cpp
+// tests/test_MathUtils.cpp
+#include <gtest/gtest.h>
+#include "WarGame/MathUtils.h"
+
+TEST(MathUtilsTest, Add) {
+    EXPECT_EQ(WarGame::MathUtils::Add(2, 3), 5);
+    EXPECT_EQ(WarGame::MathUtils::Add(-1, 1), 0);
+    EXPECT_EQ(WarGame::MathUtils::Add(0, 0), 0);
+}
+```

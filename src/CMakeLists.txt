@@ -1,3 +1,3 @@
-add_library(WarGame2 STATIC MathUtils.cpp)
+add_library(WarGame STATIC MathUtils.cpp)
 
-target_include_directories(WarGame2 PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(WarGame PUBLIC ${PROJECT_SOURCE_DIR}/include)

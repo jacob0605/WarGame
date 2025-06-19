@@ -1,8 +1,8 @@
 #pragma once
 
-namespace WarGame2 {
+namespace WarGame {
     class MathUtils {
     public:
         static int Add(int a, int b);
     };
-} // namespace WarGame2
+} // namespace WarGame
