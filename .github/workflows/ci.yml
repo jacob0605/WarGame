@@ -17,8 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout repository (with submodules)
       uses: actions/checkout@v3
+      with:
+        submodules: true  # ✅ 요 줄이 핵심입니다
 
     - name: Install dependencies
       run: |
