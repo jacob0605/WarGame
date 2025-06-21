@@ -1,13 +1,13 @@
 name: C++ CI
 
 on:
-  push:
-    branches:
-      - dev
-      - 'feat-*'
-      - 'bug-*'
-      - 'refactor-*'
-      - 'docs-*'
+  # push:
+  #   branches:
+  #     - dev
+  #     - 'feat-*'
+  #     - 'bug-*'
+  #     - 'refactor-*'
+  #     - 'docs-*'
   pull_request:
     branches:
       - dev
