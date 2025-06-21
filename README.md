@@ -1,4 +1,4 @@
-# WarGame2
+# WarGame
 
 이 게임은 24년도 동계 C++ 캠프의 project를 이어 받아 개선한 게임이다.
 
