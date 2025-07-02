@@ -5,7 +5,7 @@
 
 class LoggerBackend {
 public:
-    virtual void write(const std::string& msg) = 0;
+    virtual int write(const std::string& msg) = 0;
     virtual ~LoggerBackend() = default;
 };
 
