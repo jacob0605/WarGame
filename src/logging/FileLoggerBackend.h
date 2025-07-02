@@ -4,7 +4,7 @@
 #include "LoggerBackend.h"
 #include <fstream>
 
-class FileLoggerBackend : LoggerBackend {
+class FileLoggerBackend : public LoggerBackend {
 private:
     std::ofstream file;
 
