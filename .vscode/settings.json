@@ -9,4 +9,8 @@
 		"editor.formatOnSave": true,
   	},
 	"C_Cpp.formatting": "clangFormat",
+	"files.associations": {
+		"xstring": "cpp",
+		"vector": "cpp"
+	},
 }
