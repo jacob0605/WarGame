@@ -1,0 +1,35 @@
+# 빌드 디렉토리
+/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/*.sln
+**/*.vcxproj*
+**/*.user
+**/*.obj
+**/*.pdb
+**/*.idb
+**/*.ilk
+**/*.exe
+**/*.dll
+**/*.lib
+**/*.exp
+**/*.log
+
+# Visual Studio 관련 파일
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# VSCode 설정 파일
+.vscode/
+
+# 테스트 결과 및 로그
+Testing/
+CTestTestfile.cmake
+DartConfiguration.tcl
+
+# 기타 시스템 파일
+*.DS_Store
+Thumbs.db
