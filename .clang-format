@@ -1,0 +1,61 @@
+# Base
+BasedOnStyle: LLVM # LLVM 스타일을 기반으로 필요한 옵션만 덮어씀
+Language: Cpp # C++ 코드용 포맷 규칙 사용
+Standard: c++20 # C++20 문법 기준으로 해석
+
+# Include
+SortIncludes: false # include 순서는 자동 정렬하지 않고 직접 관리
+IncludeBlocks: Preserve # include 블록 사이의 빈 줄 구분 유지
+
+# Column / line breaking
+ColumnLimit: 0 # 줄 길이 제한 없음; 모니터 환경 차이 때문에 작성자가 직접 줄바꿈 관리
+BreakBeforeBinaryOperators: None # 이항 연산자는 줄 앞이 아니라 이전 줄 끝에 둠
+BreakBeforeTernaryOperators: true # 삼항 연산자의 ?와 : 앞 줄바꿈 허용
+BreakStringLiterals: false # 긴 문자열 리터럴을 자동 분할하지 않음
+
+# Indentation
+IndentWidth: 4 # 기본 들여쓰기 4칸
+UseTab: Never # 탭 대신 공백 사용
+TabWidth: 4 # 탭 문자를 4칸 너비로 간주
+NamespaceIndentation: All # namespace 내부도 들여쓰기
+IndentPPDirectives: None # 전처리 지시문은 들여쓰기하지 않음
+IndentCaseLabels: true # case/default 라벨을 switch 본문 기준으로 들여쓰기
+IndentCaseBlocks: false # case 내부 블록을 추가 들여쓰기하지 않음
+AccessModifierOffset: -4 # public/private/protected를 클래스 본문보다 4칸 앞으로 배치
+
+# Braces
+BreakBeforeBraces: Attach # 여는 중괄호를 함수/제어문/클래스 선언과 같은 줄에 붙임
+
+# Alignment / packing
+AlignAfterOpenBracket: DontAlign # 열린 괄호 뒤 줄바꿈 시 괄호 위치에 세로 정렬하지 않음
+AlignConsecutiveAssignments: false # 연속된 대입문의 = 위치를 세로 정렬하지 않음
+AlignOperands: DontAlign # 여러 줄 연산식의 피연산자를 세로 정렬하지 않음
+AlignTrailingComments: true # 줄 끝 주석을 가능한 한 세로 정렬
+BinPackArguments: false # 함수 호출 인자를 한 줄에 최대한 많이 몰아넣지 않음
+BinPackParameters: false # 함수 선언/정의 매개변수를 한 줄에 최대한 많이 몰아넣지 않음
+
+# Short constructs
+AllowShortFunctionsOnASingleLine: Inline # 클래스 내부의 짧은 함수 정도만 한 줄 허용
+AllowShortIfStatementsOnASingleLine: Never # 짧은 if문도 한 줄로 압축하지 않음
+AllowShortLoopsOnASingleLine: false # 짧은 for/while문도 한 줄로 압축하지 않음
+AllowShortCaseLabelsOnASingleLine: false # 짧은 case 라벨을 한 줄로 합치지 않음
+
+# Constructor initializers
+BreakConstructorInitializers: BeforeColon # 생성자 초기화 리스트 줄바꿈 시 콜론 앞에서 줄바꿈
+PackConstructorInitializers: Never # 생성자 초기화 리스트 항목을 한 줄에 몰아넣지 않음
+
+# Spaces
+SpacesInParentheses: false # 소괄호 안쪽 공백 제거
+SpacesInSquareBrackets: false # 대괄호 안쪽 공백 제거
+SpacesInAngles: false # 템플릿 꺾쇠괄호 안쪽 공백 제거
+SpaceBeforeCaseColon: false # case 라벨의 콜론 앞 공백 제거
+SpaceBeforeCpp11BracedList: false # C++11 중괄호 초기화 앞 공백 제거
+
+# Pointers / references
+PointerAlignment: Left # 포인터/참조 기호를 타입 쪽에 붙임: int* ptr, const T& ref
+
+# Braced list
+Cpp11BracedListStyle: true # C++11 중괄호 초기화 리스트 스타일 사용
+
+# Attributes
+BreakAfterAttributes: Leave # [[nodiscard]] 같은 어트리뷰트 뒤 줄바꿈을 작성자 배치대로 유지
