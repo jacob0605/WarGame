@@ -42,14 +42,14 @@ AllowShortCaseLabelsOnASingleLine: false # 짧은 case 라벨을 한 줄로 합�
 
 # Constructor initializers
 BreakConstructorInitializers: BeforeColon # 생성자 초기화 리스트 줄바꿈 시 콜론 앞에서 줄바꿈
-PackConstructorInitializers: Never # 생성자 초기화 리스트 항목을 한 줄에 몰아넣지 않음
+PackConstructorInitializers: CurrentLine # 한 줄에 들어가면 한 줄 유지, 아니면 항목별 줄바꿈
 
 # Spaces
 SpacesInParentheses: false # 소괄호 안쪽 공백 제거
 SpacesInSquareBrackets: false # 대괄호 안쪽 공백 제거
 SpacesInAngles: false # 템플릿 꺾쇠괄호 안쪽 공백 제거
 SpaceBeforeCaseColon: false # case 라벨의 콜론 앞 공백 제거
-SpaceBeforeCpp11BracedList: false # C++11 중괄호 초기화 앞 공백 제거
+SpaceBeforeCpp11BracedList: true # C++11 중괄호 초기화 앞 공백 유지
 
 # Pointers / references
 PointerAlignment: Left # 포인터/참조 기호를 타입 쪽에 붙임: int* ptr, const T& ref
